@@ -1,0 +1,97 @@
+// Goalof this code is to create a RGB LED light show with forward and reverse sequences. The main Theme is Digital Output Control 
+void setup() {
+ // Making the digital pins 8, 9, 10, and 11 as outputs.
+ pinMode(8, OUTPUT);
+ pinMode(9, OUTPUT);
+ pinMode(10, OUTPUT);
+ pinMode(11, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ digitalWrite(8, HIGH); // The LED turns to red
+ digitalWrite(9, LOW);
+ digitalWrite(10, LOW);
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, HIGH); // The LED turns to green
+ digitalWrite(10, LOW);
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, LOW);
+ digitalWrite(10, HIGH); // The LED turns to blue
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, HIGH);
+ digitalWrite(9, LOW);
+ digitalWrite(10, HIGH); // The LED turns to magenta
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, HIGH);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, LOW); // The LED turns to yellow
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, HIGH); // The LED turns to cyan
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, HIGH);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, HIGH); // The LED turns to white
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+ 
+ // Reverse sequence
+ digitalWrite(8, HIGH);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, LOW); // The LED turns to yellow
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, HIGH); // The LED turns to cyan
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, HIGH);
+ digitalWrite(9, LOW);
+ digitalWrite(10, HIGH); // The LED turns to magenta
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, LOW);
+ digitalWrite(10, HIGH); // The LED turns to blue
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, LOW);
+ digitalWrite(9, HIGH);
+ digitalWrite(10, LOW); // The LED turns to green
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ digitalWrite(8, HIGH);
+ digitalWrite(9, LOW);
+ digitalWrite(10, LOW); // The LED turns to red
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+
+ // Turn off all LEDs
+ digitalWrite(8, LOW);
+ digitalWrite(9, LOW);
+ digitalWrite(10, LOW);
+ digitalWrite(11, LOW);
+ delay(1000); // Waits for 1 second
+}
